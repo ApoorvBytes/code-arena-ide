@@ -41,6 +41,7 @@ activeFile={activeFile}
 setFiles={setFiles}
 consoleLogs={consoleLogs}
 stats={stats}
+setStats={setStats}
 />
 
 <StatusBar/>

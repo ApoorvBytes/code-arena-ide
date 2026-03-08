@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import EditorPane from "./EditorPane"
 import ConsolePane from "./ConsolePane"
 import PreviewPane from "./PreviewPane"
@@ -8,8 +9,29 @@ files,
 activeFile,
 setFiles,
 consoleLogs,
-stats
+stats,
+setStats
 }){
+
+const file = files.find(f=>f.name===activeFile)
+
+useEffect(()=>{
+
+if(!file) return
+
+const text = file.content || ""
+
+const lines = text.split("\n").length
+const chars = text.length
+
+setStats({
+execTime: Math.floor(Math.random()*5), // temporary execution time
+lines,
+chars,
+errors:0
+})
+
+},[file])
 
 return(
 
@@ -33,10 +55,7 @@ setFiles={setFiles}
 
 <div className="preview-side">
 
-<PreviewPane
-files={files}
-activeFile={activeFile}
-/>
+<PreviewPane files={files}/>
 
 <div className="splitter"></div>
 
