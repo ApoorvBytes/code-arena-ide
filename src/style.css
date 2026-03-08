@@ -1,0 +1,220 @@
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+background:#0a0c10;
+color:#c9d6e8;
+font-family:'Rajdhani',sans-serif;
+height:100vh;
+overflow:hidden;
+}
+
+/* MAIN SHELL */
+
+.shell{
+display:grid;
+grid-template-rows:48px 1fr 28px;
+height:100vh;
+background:#0a0c10;
+}
+
+/* WORKSPACE */
+
+.workspace{
+display:grid;
+grid-template-columns:1fr 4px 1fr;
+height:100%;
+overflow:hidden;
+}
+
+/* LEFT SIDE */
+
+.editor-side{
+display:grid;
+grid-template-rows:1fr 4px 180px;
+border-right:1px solid #1e2a38;
+}
+
+/* RIGHT SIDE */
+
+.preview-side{
+display:grid;
+grid-template-rows:1fr 4px 180px;
+}
+
+/* SPLITTER */
+
+.splitter{
+background:#1e2a38;
+}
+
+.splitter-v{
+background:#1e2a38;
+width:4px;
+}
+
+/* TOPBAR */
+
+.topbar{
+display:flex;
+align-items:center;
+padding:10px;
+background:#0f1318;
+border-bottom:1px solid #1e2a38;
+gap:12px;
+box-shadow:0 0 20px rgba(0,229,255,0.05);
+}
+
+.logo{
+color:#00e5ff;
+font-size:18px;
+margin-right:10px;
+text-shadow:0 0 12px #00e5ff;
+}
+
+/* TABS */
+
+.tabs{
+display:flex;
+gap:6px;
+}
+
+.tab{
+display:flex;
+align-items:center;
+gap:6px;
+background:#151b24;
+border:none;
+color:#c9d6e8;
+padding:6px 10px;
+cursor:pointer;
+font-size:13px;
+border-radius:4px;
+}
+
+.tab.active{
+border-bottom:2px solid #00e5ff;
+color:#00e5ff;
+}
+
+.file-icon{
+font-size:12px;
+}
+
+.close{
+margin-left:4px;
+opacity:.6;
+cursor:pointer;
+}
+
+.close:hover{
+color:#ff2d55;
+}
+
+/* ACTION BUTTONS */
+
+.actions{
+margin-left:auto;
+display:flex;
+gap:8px;
+}
+
+.actions button{
+background:#151b24;
+border:1px solid #1e2a38;
+color:#c9d6e8;
+padding:5px 10px;
+cursor:pointer;
+font-size:12px;
+border-radius:4px;
+}
+
+.actions button:hover{
+border-color:#00e5ff;
+color:#00e5ff;
+}
+
+/* EDITOR */
+
+
+
+
+.line-numbers span{
+display:block;
+line-height:20px;
+}
+
+.editor-pane textarea{
+flex:1;
+background:#0a0c10;
+color:#eaf4ff;
+border:none;
+outline:none;
+padding:12px;
+font-family:monospace;
+font-size:14px;
+line-height:20px;
+caret-color:#00e5ff;
+}
+
+/* CONSOLE */
+
+.console-pane{
+background:#0f1318;
+border-top:1px solid #1e2a38;
+overflow:auto;
+padding:10px;
+font-family:monospace;
+}
+
+/* PREVIEW */
+
+.preview-pane{
+display:flex;
+flex-direction:column;
+height:100%;
+box-shadow:inset 0 0 20px rgba(0,229,255,0.05);
+}
+
+.preview-frame{
+flex:1;
+width:100%;
+border:none;
+background:white;
+}
+
+/* STATS */
+
+.stats-pane{
+background:#0f1318;
+border-top:1px solid #1e2a38;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+}
+
+.stat-card{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:10px;
+}
+
+.stat-val{
+font-size:18px;
+font-weight:bold;
+color:#39ff14;
+text-shadow:0 0 10px #39ff14;
+}
+
+.stat-label{
+font-size:10px;
+opacity:.6;
+}
+
+.editor-pane{
+height:100%;
+}
