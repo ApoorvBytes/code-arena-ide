@@ -2,6 +2,7 @@ import { useState } from "react"
 import Topbar from "./components/Topbar"
 import Workspace from "./components/Workspace"
 import StatusBar from "./components/StatusBar"
+import Footer from "./components/Footer"
 import "./style.css"
 
 function App(){
@@ -43,6 +44,8 @@ stats={stats}
 />
 
 <StatusBar/>
+
+<Footer/>
 
 </div>
 

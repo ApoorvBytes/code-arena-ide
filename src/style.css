@@ -12,13 +12,12 @@ height:100vh;
 overflow:hidden;
 }
 
-/* MAIN SHELL */
+/* SHELL */
 
 .shell{
 display:grid;
-grid-template-rows:48px 1fr 28px;
+grid-template-rows:48px 1fr 28px 40px;
 height:100vh;
-background:#0a0c10;
 }
 
 /* WORKSPACE */
@@ -30,7 +29,7 @@ height:100%;
 overflow:hidden;
 }
 
-/* LEFT SIDE */
+/* LEFT */
 
 .editor-side{
 display:grid;
@@ -38,7 +37,7 @@ grid-template-rows:1fr 4px 180px;
 border-right:1px solid #1e2a38;
 }
 
-/* RIGHT SIDE */
+/* RIGHT */
 
 .preview-side{
 display:grid;
@@ -114,7 +113,7 @@ cursor:pointer;
 color:#ff2d55;
 }
 
-/* ACTION BUTTONS */
+/* ACTIONS */
 
 .actions{
 margin-left:auto;
@@ -138,14 +137,6 @@ color:#00e5ff;
 }
 
 /* EDITOR */
-
-
-
-
-.line-numbers span{
-display:block;
-line-height:20px;
-}
 
 .editor-pane textarea{
 flex:1;
@@ -215,6 +206,35 @@ font-size:10px;
 opacity:.6;
 }
 
-.editor-pane{
-height:100%;
+/* FOOTER */
+
+.footer{
+background:#0f1318;
+border-top:1px solid #1e2a38;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:13px;
+color:#4a6070;
+}
+
+.footer-content{
+display:flex;
+gap:20px;
+align-items:center;
+}
+
+.footer-links{
+display:flex;
+gap:12px;
+}
+
+.footer-links a{
+color:#00e5ff;
+text-decoration:none;
+font-size:12px;
+}
+
+.footer-links a:hover{
+text-shadow:0 0 8px #00e5ff;
 }
