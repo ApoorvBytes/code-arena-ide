@@ -345,53 +345,7 @@ The modular architecture allows future expansion without requiring major structu
 </div>
 
 ---
-# 📸 Screenshots
 
-> **Replace these placeholders with your actual screenshots.**
->
-> **Recommended Screenshot Size:** `1920 × 1080`
-
----
-
-## 🏠 Home
-
-<p align="center">
-
-<img src="assets/home.png" width="90%">
-
-</p>
-
----
-
-## 💻 Editor Workspace
-
-<p align="center">
-
-<img src="assets/editor.png" width="90%">
-
-</p>
-
----
-
-## 📂 Project Explorer
-
-<p align="center">
-
-<img src="assets/project.png" width="90%">
-
-</p>
-
----
-
-## 📊 Code Statistics
-
-<p align="center">
-
-<img src="assets/stats.png" width="90%">
-
-</p>
-
----
 
 # 🚀 Roadmap
 
