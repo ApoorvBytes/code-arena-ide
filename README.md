@@ -514,3 +514,163 @@ It helps others discover the project and motivates future development.
 </div>
 
 ---
+# 📄 License
+
+This project is licensed under the **MIT License**, allowing anyone to use, modify, and distribute the project while providing proper attribution.
+
+```text
+MIT License
+
+Copyright (c) 2026 Apoorv Anant Khobragade
+
+Permission is hereby granted, free of charge,
+to any person obtaining a copy of this software
+and associated documentation files (the "Software"),
+to deal in the Software without restriction,
+including without limitation the rights to use,
+copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS",
+WITHOUT WARRANTY OF ANY KIND.
+```
+
+---
+
+# 👨‍💻 About the Developer
+
+<div align="center">
+
+<img src="https://github.com/ApoorvBytes.png" width="140" style="border-radius:50%;">
+
+## Apoorv Anant Khobragade
+
+**Full Stack Developer • AI Enthusiast • Software Engineer**
+
+Building scalable web applications with modern technologies while exploring AI, developer tools, and intuitive user experiences.
+
+</div>
+
+---
+
+## 🌐 Connect With Me
+
+<p align="center">
+
+<a href="https://github.com/ApoorvBytes">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github">
+</a>
+
+<a href="https://www.linkedin.com/in/apoorv-khobragade-474a642a2">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin">
+</a>
+
+<a href="https://apoorvkhobragadeportfolio.in">
+<img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel">
+</a>
+
+<a href="mailto:apoorvkhobragade16@gmail.com">
+<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail">
+</a>
+
+</p>
+
+---
+
+# 💙 Support the Project
+
+If you enjoyed using **CodeArena IDE**, you can support the project by:
+
+⭐ Starring the repository
+
+🍴 Forking the project
+
+🐛 Reporting bugs
+
+💡 Suggesting new features
+
+🤝 Contributing improvements
+
+Every contribution helps make the project better for the developer community.
+
+---
+
+# 📈 Repository Activity
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=ApoorvBytes&repo=code-arena-ide&theme=tokyonight"/>
+
+</div>
+
+---
+
+# 🔥 Visitor Counter
+
+<div align="center">
+
+<img src="https://komarev.com/ghpvc/?username=ApoorvBytes&repo=code-arena-ide&label=Repository+Views&color=0e75b6&style=for-the-badge">
+
+</div>
+
+---
+
+# 💡 Inspiration
+
+CodeArena IDE was inspired by the simplicity and productivity of modern development environments such as:
+
+- Visual Studio Code
+- CodeSandbox
+- StackBlitz
+- Monaco Editor
+
+The goal wasn't to replicate them, but to understand the architecture behind browser-based developer tools while building a clean, scalable application.
+
+---
+
+# 📝 Development Principles
+
+Throughout this project, the following principles guided every design decision:
+
+- Clean and readable code
+- Modular architecture
+- Reusable React components
+- Responsive user interface
+- Performance-first development
+- Maintainable project structure
+- Scalability for future enhancements
+
+---
+
+# 🚀 What's Next?
+
+Future development will focus on transforming CodeArena IDE into a complete browser-based development platform.
+
+Planned improvements include:
+
+- 🤖 AI-powered coding assistant
+- ⚡ Real-time code execution
+- ☁ Cloud workspace synchronization
+- 🔐 User authentication
+- 📂 Project import/export
+- 🌙 Custom themes
+- 🧩 Plugin ecosystem
+- 🖥 Integrated terminal
+- 👥 Collaborative coding
+- 🔄 GitHub integration
+
+---
+
+<div align="center">
+
+# ⭐ Star this repository if you found it useful!
+
+### Thank you for visiting ❤️
+
+*"Great software is built one commit at a time."*
+
+---
+
+Made with ☕, React, and lots of curiosity by **Apoorv Anant Khobragade**
+
+</div>
