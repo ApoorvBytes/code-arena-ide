@@ -2,17 +2,10 @@ function StatusBar(){
 
 return(
 
-<footer style={{
-height:"30px",
-borderTop:"1px solid #333",
-display:"flex",
-alignItems:"center",
-padding:"0 10px"
-}}>
-
-Connected • UTF-8 • Code Arena IDE
-
-</footer>
+ <div className="statusbar">
+   <div className="statusbar-group"><span className="status-dot" /> <strong>Ready</strong><span className="status-separator">|</span><span>Local workspace</span></div>
+   <div className="statusbar-group"><span>UTF-8</span><span className="status-separator">|</span><span>Spaces: 2</span><span className="status-separator">|</span><span>Ln 1, Col 1</span></div>
+ </div>
 
 )
 

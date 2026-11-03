@@ -3,14 +3,19 @@ import EditorPane from "./EditorPane"
 import ConsolePane from "./ConsolePane"
 import PreviewPane from "./PreviewPane"
 import StatsPane from "./StatsPane"
+import Explorer from "./Explorer"
 
 function Workspace({
 files,
 activeFile,
+setActiveFile,
 setFiles,
 consoleLogs,
 stats,
-setStats
+setStats,
+runVersion,
+addFile,
+closeFile
 }){
 
 const file = files.find(f=>f.name===activeFile)
@@ -19,43 +24,47 @@ useEffect(()=>{
 
 if(!file) return
 
-const text = file.content || ""
+ const text = file?.content || ""
 
 const lines = text.split("\n").length
 const chars = text.length
 
-setStats({
-execTime: Math.floor(Math.random()*5), // temporary execution time
-lines,
-chars,
-errors:0
-})
+ setStats(current=>({...current,lines,chars}))
 
-},[file])
+ },[file,setStats])
 
 return(
 
 <div className="workspace">
 
-<div className="editor-side">
+ <section className="editor-side">
+   <div className="editor-workspace">
+     <Explorer
+       files={files}
+       activeFile={activeFile}
+       setActiveFile={setActiveFile}
+       addFile={addFile}
+       closeFile={closeFile}
+     />
+     <EditorPane
+       files={files}
+       activeFile={activeFile}
+       setFiles={setFiles}
+       closeFile={closeFile}
+     />
+   </div>
 
-<EditorPane
-files={files}
-activeFile={activeFile}
-setFiles={setFiles}
-/>
+ <div className="splitter"></div>
 
-<div className="splitter"></div>
+ <ConsolePane logs={consoleLogs}/>
 
-<ConsolePane logs={consoleLogs}/>
-
-</div>
+ </section>
 
 <div className="splitter splitter-v"></div>
 
 <div className="preview-side">
 
-<PreviewPane files={files}/>
+ <PreviewPane files={files} refreshKey={runVersion}/>
 
 <div className="splitter"></div>
 
